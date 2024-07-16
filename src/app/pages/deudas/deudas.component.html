@@ -2,7 +2,7 @@
     <div>
         <label for="">Cedula</label>
         <input type="text"  id="cedulatxt" #cedulatxt [(ngModel)]="cedula">
-        <button>Buscar</button>
+        <button (click)="obtenerCliente()">Buscar</button>
     </div>
 </form>
 

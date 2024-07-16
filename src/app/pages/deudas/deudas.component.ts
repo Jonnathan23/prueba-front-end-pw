@@ -26,6 +26,7 @@ export class DeudasComponent {
   }
 
   obtenerCliente(){
+    console.log('click')
     this.deudaService.obtenerDeuda(this.cedula).subscribe(cliente => this.cliente = cliente.deu_nombre)
   }
 
