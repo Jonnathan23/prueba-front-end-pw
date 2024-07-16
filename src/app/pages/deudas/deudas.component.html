@@ -1,0 +1,29 @@
+<form action="">
+    <div>
+        <label for="">Cedula</label>
+        <input type="text"  id="cedulatxt" #cedulatxt [(ngModel)]="cedula">
+        <button>Buscar</button>
+    </div>
+</form>
+
+<div>
+    <section>
+        <h3>Cliente encontrado:</h3>
+        <p>{{cliente}}</p>
+    </section>
+</div>
+
+<div>
+    <h3>Listado</h3>
+    <ul>
+        @for (deu of listadoDeudas; track deu) {
+            <h4>Cliente</h4>
+            <li>Cedula: {{deu.deu_cedula}}</li>
+            <li>Nombre: {{deu.deu_nombre}}</li>
+            <li>Consumo: {{deu.deu_consumo}}</li>
+            <li>Deuda: {{deu.deu_deuda}}</li>
+        }
+    </ul>
+
+</div>
+
